@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate Total Return</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+<body>
+    <script src="java.js"></script>
+    <div ng-app="Myapp" ng-controller="Myctrl">
+        <h3>Fixed Deposit Calculator by Kamal</h3>
+        <b>Types of Customer:</b><br><br>
+        <select name="dropdown">
+            <option value="#">Normal</option><br><br>
+        </select><br><br>   
+        <b>Type of Fixed Deposit:</b>
+        <select name="dropdown">
+            <option value="#">Cumulative</option>
+        </select><br><br>
+        <b>Amount:</b><br>
+        <input type="text" placeholder="principle" ng-model="amount.principle"><br><br>
+        <b>Date Of Fd</b><br><br>
+        <input type="date" placeholder="dd-mm-yyyy"><br><br>
+        <b>Illustrative Intrest Rates(in % p.a)</b><br>
+        <input type="text" placeholder="rate" ng-model="amount.rate"><br><br>
+        <b>Tensure:</b>
+        <input type="text" placeholder="year" ng-model="amount.year"><br><br>
+        <input type="text" placeholder="months" ng-model="amount.months"><br><br>
+        <input type="text" placeholder="days" ng-model="amount.days"><br><br>
+        <b>Maturity Date:</b><br><br>
+        <input type="date" placeholder="dd-mm-yyyy">
+        <p>Total Intrest:{{amount.intrest}}  Maturity value:{{amount.TotalAmount}}</p>
+        <button ng-click="calculateAmount()">Calculate</button>
+    </div>
+</body>
+</html>

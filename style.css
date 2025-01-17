@@ -1,0 +1,44 @@
+body{
+
+    background-image: url("solarsystem.jpeg");
+    background-size: cover;
+    color:"blue"
+} 
+h3{
+    background-color:yellow;
+}
+div{
+    width: 500px;
+    height: 680px;
+    border: 2px solid yellow;
+    padding-left: 10px;
+    margin: 75px auto;
+    color:blue;
+}
+select{
+    width: 457px;
+}
+button{
+    background-color: rgb(189, 127, 247);
+    width: 100px;
+    height: 30px;
+    border: 0cap;
+}
+
+input{
+    width: 450px;
+}
+
+
+p{
+    background-color: aquamarine;
+    width: 459px;
+    display: flex;
+    justify-content: center;
+}
+
+h3{
+    color: blueviolet;
+    display: flex;
+    justify-content: center;
+}
